@@ -11,7 +11,7 @@ export default function NavbarItem({ text, href, dropdown=[]}) {
                     <ul className="flex flex-col gap-3">
                     {
                         dropdown.map((item) => (
-                            <li className="text-xl transition hover:scale-105"><Link href={item[1]}>{item[0]}</Link></li>
+                            <li className="text-xl transition hover:scale-105" key={dropdown.indexOf(item)}><Link href={item[1]}>{item[0]}</Link></li>
                         ))
                     }
                     </ul>
