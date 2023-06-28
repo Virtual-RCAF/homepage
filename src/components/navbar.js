@@ -3,7 +3,7 @@ import NavbarItem from './navbar-item'
 
 export default function Navbar() {
     return (
-        <nav className='m-8 h-1/6'>
+        <nav className='m-8 h-1/6 w-full absolute bg-transparent'>
             <ul className='flex justify-center gap-20 text-white'>
                 <NavbarItem text={"Home"} href={"/"}></NavbarItem>
                 <NavbarItem text={"About Us"} href={"/"} dropdown={[["Staff", "/staff"], ["Partners", "/partners"]]}></NavbarItem>

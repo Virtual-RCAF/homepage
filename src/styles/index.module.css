@@ -1,11 +1,60 @@
-.backgroundImage {
-    position: absolute;
-    left: 0;
-    top: 0;
+.imagePanel {
     z-index: -1;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-image: url("/images/CL60.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.infoPanel {
+    background-color: white;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cardPanel {
+    padding: 2.5%;
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 6rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.sectionHeader {
+    font-size: 3rem;
+    color: #483949;
+    text-align: center;
+}
+
+.sectionSubheader {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #483949;
+    text-align: center;
 }

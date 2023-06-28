@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavbarItem({ text, href, dropdown=[]}) {
 
     return (
-        <li className='group text-2xl font-semibold transition hover:scale-110'>
+        <li className='group text-2xl font-semibold transition hover:scale-105'>
             <Link href={href}>{text}</Link>
             {
             <div className="pt-2">
