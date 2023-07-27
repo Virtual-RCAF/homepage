@@ -16,4 +16,5 @@ jobs:
           username: git
           key: ${{ secrets.SSH_PRIV_KEY }}
           cipher: ed25519
+          debug: True
           script: echo "Done!"
