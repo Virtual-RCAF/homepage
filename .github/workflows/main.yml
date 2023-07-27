@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to server
-        uses: appleboy/ssh-action@v0.0.9
+        uses: appleboy/ssh-action
         with:
           host: ${{ secrets.SSH_HOST_ADDR }}
           port: 22
