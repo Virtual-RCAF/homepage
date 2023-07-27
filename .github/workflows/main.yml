@@ -13,7 +13,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST_ADDR }}
           port: 22
-          username: ${{ secrets.SSH_HOST_USER }}
+          username: git
           key: ${{ secrets.SSH_PRIV_KEY }}
 
           script: echo "Done!"
